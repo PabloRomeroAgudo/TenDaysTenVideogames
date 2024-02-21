@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_padding_big">16</dimen>
+    <dimen name="card_padding_small">8</dimen>
+    <dimen name="padding_title">20</dimen>
+    <dimen name="card_elevation">2</dimen>
+    <dimen name="min_height">72</dimen>
+    <dimen name="image_size">90</dimen>
+    <dimen name="image_size_expanded">130</dimen>
+    <dimen name="image_padding">5</dimen>
+</resources>

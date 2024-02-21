@@ -57,10 +57,10 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.graphics.drawscope.rotate
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.unit.dp
 import com.example.tendaystenvideogames.model.Videogame
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -77,7 +77,7 @@ fun VideogameTopBar(modifier: Modifier = Modifier) {
                     text = stringResource(id = R.string.app_name),
                     textAlign = TextAlign.Center,
                     style = MaterialTheme.typography.displayLarge,
-                    modifier = Modifier.padding(end = 20.dp)
+                    modifier = Modifier.padding(end = dimensionResource(id = R.dimen.padding_title))
                 )
                 Button(
                     onClick = {
@@ -109,7 +109,7 @@ fun VideogameItem(
     )
     Card(
         modifier = modifier,
-        elevation = CardDefaults.cardElevation(2.dp)
+        elevation = CardDefaults.cardElevation(dimensionResource(id = R.dimen.card_elevation))
     ) {
         Column (
             modifier = Modifier
@@ -124,8 +124,8 @@ fun VideogameItem(
             Row(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .sizeIn(minHeight = 72.dp)
-                    .padding(16.dp),
+                    .sizeIn(minHeight = dimensionResource(id = R.dimen.min_height))
+                    .padding(dimensionResource(id = R.dimen.card_padding_big)),
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 VideogameTitle(
@@ -143,7 +143,7 @@ fun VideogameItem(
                     expanded,
                     url = stringResource(id = videogame.webPageRes),
                     modifier = Modifier
-                        .padding(start = 16.dp)
+                        .padding(start = dimensionResource(id = R.dimen.card_padding_big))
                 )
             }
 
@@ -151,7 +151,11 @@ fun VideogameItem(
                 VideogameDescription(
                     videogameDescription = videogame.descriptionRes,
                     modifier = Modifier
-                        .padding(start = 16.dp, end = 16.dp, bottom = 16.dp)
+                        .padding(
+                            start = dimensionResource(id = R.dimen.card_padding_big),
+                            end = dimensionResource(id = R.dimen.card_padding_big),
+                            bottom = dimensionResource(id = R.dimen.card_padding_big)
+                        )
                 )
             }
         }
@@ -182,7 +186,10 @@ fun VideogameIcon(
     url: String,
     modifier: Modifier = Modifier
 ) {
-    val size = animateDpAsState(if (expanded) 130.dp else 90.dp, label = "")
+    val size = animateDpAsState(if (expanded)
+                                    dimensionResource(id = R.dimen.image_size_expanded)
+                                else
+                                    dimensionResource(id = R.dimen.image_size), label = "")
 
     val infiniteTransition = rememberInfiniteTransition(label = "")
     val rotateAnimation = infiniteTransition.animateFloat(
@@ -214,7 +221,7 @@ fun VideogameIcon(
         contentDescription = null,
         modifier = modifier
             .size(size.value)
-            .padding(5.dp)
+            .padding(dimensionResource(id = R.dimen.image_padding))
             .drawBehind {
                 rotate(rotateAnimation.value) {
                     drawCircle(rainbowColorsBrush, style = Stroke(15f))

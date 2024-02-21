@@ -13,8 +13,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.dp
 import com.example.tendaystenvideogames.dataSource.VideogamesDataSource
 import com.example.tendaystenvideogames.ui.theme.TenDaysTenVideogamesTheme
 
@@ -48,7 +48,11 @@ fun VideogameApp() {
             items(videogames) {
                 VideogameItem(
                     videogame = it,
-                    modifier = Modifier.padding(start = 16.dp, end = 16.dp, top = 8.dp)
+                    modifier = Modifier.padding(
+                        start = dimensionResource(id = R.dimen.card_padding_big),
+                        end = dimensionResource(id = R.dimen.card_padding_big),
+                        top = dimensionResource(id = R.dimen.card_padding_small)
+                    )
                 )
             }
         }
