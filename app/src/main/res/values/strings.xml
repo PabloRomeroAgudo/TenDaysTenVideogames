@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Ten Videogames</string>
+
+    <string name="titulo_juego1">Elden Ring</string>
+    <string name="descripcion_juego1">Juego de acción y aventura de mundo abierto conocido por su dificultad y narrativa intrincada. Los jugadores exploran paisajes, luchan contra enemigos y desentrañan.</string>
+    <string name="webPage_juego1">https://es.bandainamcoent.eu/elden-ring/elden-ring</string>
+
+    <string name="titulo_juego2">Fortnite</string>
+    <string name="descripcion_juego2">Juego de batalla real desarrollado por Epic Games. Combina elementos de construcción, disparos y supervivencia en un vibrante mundo en constante evolución.</string>
+    <string name="webPage_juego2">https://www.fortnite.com/?lang=es-ES</string>
+
+    <string name="titulo_juego3">GTA 5</string>
+    <string name="descripcion_juego3">Juego de acción y aventuras desarrollado por Rockstar Games. Ambientado en la ficticia ciudad de Los Santos, los jugadores asumen roles de criminales.</string>
+    <string name="webPage_juego3">https://www.rockstargames.com/es/gta-v</string>
+
+    <string name="titulo_juego4">Krunker</string>
+    <string name="descripcion_juego4">Juego de disparos en primera persona basado en navegador. Con gráficos pixelados estilo retro, los jugadores se enfrentan en frenéticas partidas multijugador.</string>
+    <string name="webPage_juego4">https://krunker.io/</string>
+
+    <string name="titulo_juego5">Smite</string>
+    <string name="descripcion_juego5">Juego de arena de batalla en línea (MOBA). Ambientado en un mundo de mitología, los jugadores eligen entre una amplia variedad de dioses y deidades.</string>
+    <string name="webPage_juego5">https://www.smitegame.com/</string>
+
+    <string name="titulo_juego6">Escape From Tarkov</string>
+    <string name="descripcion_juego6">Juego de supervivencia táctico. Ambientado en una ciudad rusa devastada por la guerra, los jugadores luchan por sobrevivir, recolectar botín y escapar.</string>
+    <string name="webPage_juego6">https://www.escapefromtarkov.com/</string>
+
+    <string name="titulo_juego7">Tekken 8</string>
+    <string name="descripcion_juego7">Juego con un elenco diverso de personajes, gráficos impresionantes y mecánicas de combate profundas, ofrece batallas intensas y emocionantes.</string>
+    <string name="webPage_juego7">https://es.bandainamcoent.eu/tekken/tekken-8</string>
+
+    <string name="titulo_juego8">The Withcer 3</string>
+    <string name="descripcion_juego8">Juego de rol de acción épico. Sumérgete en un vasto mundo abierto lleno de criaturas míticas, intrigas políticas y decisiones morales.</string>
+    <string name="webPage_juego8">https://www.thewitcher.com/us/es/witcher3</string>
+
+    <string name="titulo_juego9">XCOM 2</string>
+    <string name="descripcion_juego9">Juego de estrategia por turnos. Ambientado en un futuro distópico donde la humanidad está subyugada por una invasión alienígena.</string>
+    <string name="webPage_juego9">https://store.steampowered.com/app/268500/XCOM_2/</string>
+
+    <string name="titulo_juego10">Splatoon</string>
+    <string name="descripcion_juego10">Juego de disparos en tercera persona.Los jugadores controlan personajesque pueden transformarse entre forma humana y forma de calamar.</string>
+    <string name="webPage_juego10">https://splatoon.nintendo.com/es/</string>
+</resources>
