@@ -77,7 +77,7 @@ fun VideogameTopBar(modifier: Modifier = Modifier) {
                     text = stringResource(id = R.string.app_name),
                     textAlign = TextAlign.Center,
                     style = MaterialTheme.typography.displayLarge,
-                    modifier = Modifier.padding(end = dimensionResource(id = R.dimen.padding_title))
+                    modifier = Modifier.padding(end = dimensionResource(id = R.dimen.title_padding))
                 )
                 Button(
                     onClick = {
